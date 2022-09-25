@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    width: 85vw;
+    height: 100vh;
+    margin: 60px auto;
+}
+
+img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 12px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 20px
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.profile {
+    align-items: center;
+    display: flex;
+    margin-bottom: 13px;
+    color: white;
+}
+
+.detailed {
+    line-height: 1.3;
+}
+
+.verified {
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.discription {
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    opacity: 70%;
+    line-height: 1.4;
+}
+
+.testimonials {
+    /* margin: 100px auto; */
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.testimonial-1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top 12px right 100px;
+    grid-column: 1 / 3;
+}
+
+.testimonial-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.testimonial-3 {
+    background-color: white;
+}
+
+.testimonial-4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.testimonial-5 {
+    background-color: white;
+    grid-column: 4;
+    grid-row: 1 / 3;
+}
+
+.name {
+    color: hsl(217, 19%, 35%);
+}
+
+.head {
+    color: hsl(217, 19%, 35%);
+}
+
+.Graduate {
+    color: hsl(217, 19%, 35%);
+    opacity: 50%;
+}
+
+.content {
+    color: hsl(217, 19%, 35%);
+    opacity: 70%;
+}
+
+.image-border {
+    border: 3px solid hsl(257, 67%, 68%);
+}
+
+
+@media screen and (max-width:800px) {
+
+    .container {
+        /* margin: 60 auto; */
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .discription {
+        font-size: 14px;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+
+    /* testimonial-1 */
+
+    .testimonial-1 {
+        grid-column: 1;
+        background-position: top 12px right 35px;
+    }
+
+    /* testimonial-4 */
+
+    .testimonial-4 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    /* testimonial-5 */
+
+    .testimonial-5 {
+        grid-row: 5;
+        grid-column: 1;
+    }
+}
